@@ -1,9 +1,16 @@
 package com.taxsystem.commands;
 
+import com.taxsystem.models.TaxPayer;
+
 public class GenerateReportCommand implements Command {
+    private TaxPayer taxPayer;
+
+    public GenerateReportCommand(TaxPayer taxPayer) {
+        this.taxPayer = taxPayer;
+    }
+
     @Override
     public void execute() {
-        System.out.println("Generating tax report...");
-        // Логіка генерації звіту
+        taxPayer.generateTaxReport();
     }
 }

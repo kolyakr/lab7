@@ -4,26 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fce8e51-3181-4fbb-b5cd-1030e916c93a" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/AddBenefitsCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/DisplayTableCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/LoadDataCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/SaveDataCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/SetChildBenefitsCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/SetMaterialAidCommand.java" afterDir="false" />
+    <list default="true" id="8fce8e51-3181-4fbb-b5cd-1030e916c93a" name="Changes" comment="add logic">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/AddIncomeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/AddIncomeCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/CalculateTaxesCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/CalculateTaxesCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/DeleteIncomeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/DeleteIncomeCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/FindTaxesCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/FindTaxesCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/GenerateReportCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/GenerateReportCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/SortTaxesCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/SortTaxesCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/main/CommandInvoker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/taxsystem/main/CommandInvoker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/taxsystem/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/main/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/taxsystem/main/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/models/Income.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/taxsystem/models/Income.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/models/TaxPayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/taxsystem/models/TaxPayer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +64,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728730442466</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add logic">
+      <option name="closed" value="true" />
+      <created>1728739971981</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728739971982</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -97,6 +88,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start" />
-    <option name="LAST_COMMIT_MESSAGE" value="start" />
+    <MESSAGE value="add logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="add logic" />
   </component>
 </project>

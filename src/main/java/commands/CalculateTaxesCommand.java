@@ -1,6 +1,6 @@
-package com.taxsystem.commands;
+package commands;
 
-import com.taxsystem.models.TaxPayer;
+import models.TaxPayer;
 
 public class CalculateTaxesCommand implements Command {
     private TaxPayer taxPayer;
@@ -12,6 +12,6 @@ public class CalculateTaxesCommand implements Command {
     @Override
     public void execute() {
         double totalTaxes = taxPayer.calculateTotalTaxes();
-        System.out.println("Загальна сума податків: " + totalTaxes);
+        System.out.println("Total amount of taxes: " + totalTaxes);
     }
 }

@@ -4,9 +4,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fce8e51-3181-4fbb-b5cd-1030e916c93a" name="Changes" comment="add logic">
+    <list default="true" id="8fce8e51-3181-4fbb-b5cd-1030e916c93a" name="Changes" comment="add more logic">
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/Income.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/commands/AddBenefitsCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/commands/AddIncomeCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/commands/CalculateTaxesCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/commands/DeleteIncomeCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/commands/DisplayTableCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/commands/FindTaxesCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/commands/GenerateReportCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/commands/LoadDataCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/commands/SaveDataCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/commands/SetChildBenefitsCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/commands/SetMaterialAidCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/commands/SortTaxesCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/main/CommandInvokerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/main/MenuTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/models/IncomeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/models/TaxPayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/AddBenefitsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/AddBenefitsCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/AddIncomeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/AddIncomeCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/CalculateTaxesCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/CalculateTaxesCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/DeleteIncomeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/DeleteIncomeCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/DisplayTableCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/DisplayTableCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/ExitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/ExitCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/FindTaxesCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/FindTaxesCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/GenerateReportCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/GenerateReportCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/LoadDataCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/LoadDataCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/SaveDataCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/SaveDataCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/SetChildBenefitsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/SetChildBenefitsCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/SetMaterialAidCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/SetMaterialAidCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/SortTaxesCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/SortTaxesCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/main/CommandInvoker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/CommandInvoker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/main/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/models/Income.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/models/TaxPayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/TaxPayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/models/TaxPayerTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,33 +60,59 @@
       </list>
     </option>
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "kolyakr"
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;kolyakr&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/kolyakr/TaxSystemProject.git",
-    "accountId": "f212406f-9da4-41cd-8c2b-6e96b7782583"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/kolyakr/TaxSystemProject.git&quot;,
+    &quot;accountId&quot;: &quot;f212406f-9da4-41cd-8c2b-6e96b7782583&quot;
   }
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2nLKf46YycQBqiNEB1lwzOotO8D" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Desktop/java-labs/TaxSystemProject",
-    "onboarding.tips.debug.path": "D:/Desktop/java-labs/TaxSystemProject/src/main/java/org/example/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Desktop/java-labs/TaxSystemProject/src/test/java&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/Desktop/java-labs/TaxSystemProject/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Desktop\java-labs\TaxSystemProject\src\test\java" />
+      <recent name="D:\Desktop\java-labs\TaxSystemProject\src\main\java" />
+      <recent name="D:\Desktop\java-labs\TaxSystemProject\src\test\com\taxsystem" />
+      <recent name="D:\Desktop\java-labs\TaxSystemProject\src\test\com.taxsystem" />
+      <recent name="D:\Desktop\java-labs\TaxSystemProject\src\test" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Desktop\java-labs\TaxSystemProject\src\test\java" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.taxsystem.models" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -72,7 +138,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728739971982</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add more logic">
+      <option name="closed" value="true" />
+      <created>1728746277808</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728746277808</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -89,6 +163,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start" />
     <MESSAGE value="add logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="add logic" />
+    <MESSAGE value="add more logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="add more logic" />
   </component>
 </project>

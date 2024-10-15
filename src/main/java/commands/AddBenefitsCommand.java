@@ -1,6 +1,6 @@
-package com.taxsystem.commands;
+package commands;
 
-import com.taxsystem.models.TaxPayer;
+import models.TaxPayer;
 
 import java.util.Scanner;
 
@@ -15,16 +15,16 @@ public class AddBenefitsCommand implements Command {
     public void execute() {
         Scanner scanner = new Scanner(System.in);
 
-        // Запит на введення пільг на дітей
-        System.out.print("Введіть суму пільг на дітей: ");
+        // Prompt for entering child benefits
+        System.out.print("Enter the amount of child benefits: ");
         double childBenefits = scanner.nextDouble();
         taxPayer.setChildBenefits(childBenefits);
 
-        // Запит на введення матеріальної допомоги
-        System.out.print("Введіть суму матеріальної допомоги: ");
+        // Prompt for entering material aid
+        System.out.print("Enter the amount of material aid: ");
         double materialAid = scanner.nextDouble();
         taxPayer.setMaterialAid(materialAid);
 
-        System.out.println("Пільги успішно додані.");
+        System.out.println("Benefits successfully added.");
     }
 }

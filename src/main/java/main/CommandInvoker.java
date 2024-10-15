@@ -1,7 +1,7 @@
-package com.taxsystem.main;
+package main;
 
-import com.taxsystem.commands.*;
-import com.taxsystem.models.TaxPayer;
+import commands.*;
+import models.TaxPayer;
 
 public class CommandInvoker {
     private TaxPayer taxPayer;
@@ -20,19 +20,19 @@ public class CommandInvoker {
                 cmd = new DeleteIncomeCommand(taxPayer);  // Видалити дохід
                 break;
             case 3:
-                cmd = new CalculateTaxesCommand(taxPayer);  // Розрахувати податки
+                cmd = new CalculateTaxesCommand(taxPayer);  // Обчислити податки
                 break;
             case 4:
-                cmd = new SortTaxesCommand(taxPayer);  // Сортувати податки
+                cmd = new SortTaxesCommand(taxPayer);  // Відсортувати податки
                 break;
             case 5:
-                cmd = new FindTaxesCommand(taxPayer);  // Пошук податків
+                cmd = new FindTaxesCommand(taxPayer);  // Шукати податки
                 break;
             case 6:
-                cmd = new GenerateReportCommand(taxPayer);  // Генерація звіту
+                cmd = new GenerateReportCommand(taxPayer);  // Згенерувати звіт
                 break;
             case 7:
-                cmd = new SetChildBenefitsCommand(taxPayer);  // Встановити пільги на дітей
+                cmd = new SetChildBenefitsCommand(taxPayer);  // Встановити дитячі допомоги
                 break;
             case 8:
                 cmd = new SetMaterialAidCommand(taxPayer);  // Встановити матеріальну допомогу
@@ -43,14 +43,10 @@ public class CommandInvoker {
             case 10:
                 cmd = new LoadDataCommand(taxPayer);  // Завантажити дані
                 break;
-            case 11:
-                System.out.println("Exiting program...");
-                System.exit(0);
-                return;
             default:
                 System.out.println("Invalid command!");
                 return;
         }
-        cmd.execute();
+        cmd.execute(); // Виконати команду
     }
 }

@@ -1,6 +1,6 @@
-package com.taxsystem.commands;
+package commands;
 
-import com.taxsystem.models.TaxPayer;
+import models.TaxPayer;
 
 public class GenerateReportCommand implements Command {
     private TaxPayer taxPayer;

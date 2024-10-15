@@ -1,7 +1,7 @@
-package com.taxsystem.commands;
+package commands;
 
-import com.taxsystem.models.Income;
-import com.taxsystem.models.TaxPayer;
+import models.Income;
+import models.TaxPayer;
 
 public class DisplayTableCommand implements Command {
     private TaxPayer taxPayer;
@@ -13,10 +13,10 @@ public class DisplayTableCommand implements Command {
     @Override
     public void execute() {
         System.out.println("==============================================");
-        System.out.println("|  Джерело доходу  |   Сума доходу   |  Податок  |");
+        System.out.println("|  Income Source   |   Income Amount   |  Tax     |");
         System.out.println("==============================================");
         for (Income income : taxPayer.getIncomes()) {
-            double tax = income.getAmount() * 0.185;
+            double tax = income.calculateTax(); // Use the calculateTax method
             System.out.printf("| %-16s | %-14.2f | %-8.2f |\n", income.getSource(), income.getAmount(), tax);
         }
         System.out.println("==============================================");

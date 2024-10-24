@@ -26,7 +26,7 @@ public class DeleteIncomeCommand implements Command {
 
         boolean isDeleting = true;
 
-        while (isDeleting) {
+        while (isDeleting && !incomes.isEmpty()) { // Перевірка, чи список не порожній
             // Display the list of incomes with indices
             System.out.println("List of incomes:");
             for (int i = 0; i < incomes.size(); i++) {

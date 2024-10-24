@@ -1,10 +1,5 @@
 package models;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.Marker;
-import org.apache.logging.log4j.MarkerManager;
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -12,10 +7,6 @@ import java.util.Comparator;
 import java.util.List;
 
 public class TaxPayer {
-    private static final Logger fileLogger = LogManager.getLogger(TaxPayer.class); // Логер для загальних дій
-    private static final Logger errorLogger = LogManager.getLogger("ErrorLogger"); // Логер для помилок
-    private static final Marker ERROR_MARKER = MarkerManager.getMarker("ERROR"); // Маркер для помилок
-
     private List<Income> incomes;
     private double childBenefits;
     private double materialAid;
@@ -33,30 +24,28 @@ public class TaxPayer {
     // Метод для додавання доходу
     public void addIncome(Income income) {
         incomes.add(income);
-        fileLogger.info("Income added: Source: {}, Amount: {}, Type: {}", income.getSource(), income.getAmount(), income.getType());
+        // Логування прибрано
     }
 
     // Метод для видалення доходу за індексом
     public boolean removeIncome(int index) {
         if (index >= 0 && index < incomes.size()) {
-            Income removedIncome = incomes.remove(index);
-            fileLogger.info("Income removed: Source: {}, Amount: {}", removedIncome.getSource(), removedIncome.getAmount());
+            incomes.remove(index);
             return true;
         }
-        errorLogger.error(ERROR_MARKER, "Error removing income: Invalid index {}", index);
         return false;
     }
 
     // Метод для сортування податків у зростаючому порядку
     public void sortTaxesAscending() {
         Collections.sort(incomes, Comparator.comparingDouble(Income::getAmount));
-        fileLogger.info("Taxes sorted in ascending order.");
+        // Логування прибрано
     }
 
     // Метод для сортування податків у спадаючому порядку
     public void sortTaxesDescending() {
         Collections.sort(incomes, (i1, i2) -> Double.compare(i2.getAmount(), i1.getAmount()));
-        fileLogger.info("Taxes sorted in descending order.");
+        // Логування прибрано
     }
 
     // Метод для знаходження податків у заданому діапазоні
@@ -68,13 +57,12 @@ public class TaxPayer {
                 taxesInRange.add(tax);
             }
         }
-        fileLogger.info("Taxes found in range {} - {}: {}", min, max, taxesInRange);
+        // Логування прибрано
         return taxesInRange;
     }
 
     // Метод для генерації податкового звіту
     public void generateTaxReport() {
-        fileLogger.info("Generating tax report.");
         int widthSource = 20; // Ширина стовпця для джерела
         int widthAmount = 15;  // Ширина стовпця для суми
         int widthTax = 10;     // Ширина стовпця для податку
@@ -90,16 +78,11 @@ public class TaxPayer {
             double tax = income.getAmount() * 0.185; // Обчислення податку
             // Вивід інформації про дохід у консоль у форматі таблиці
             System.out.printf("%-" + widthSource + "s %" + widthAmount + ".2f %" + widthTax + ".2f%n", income.getSource(), income.getAmount(), tax);
-
-            // Логування інформації
-            fileLogger.info("Source: {}, Amount: {}, Tax: {}", income.getSource(), income.getAmount(), tax);
         }
 
         // Розділова лінія
         System.out.println("=".repeat(widthSource + widthAmount + widthTax + 2));
-        fileLogger.info("Tax report generated successfully.");
     }
-
 
     // Метод для обчислення загальних податків з урахуванням пільг
     public double calculateTotalTaxes() {
@@ -132,10 +115,9 @@ public class TaxPayer {
                 writer.printf("%s,%.2f,%s%n", income.getSource(), income.getAmount(), income.getType());
             }
             writer.printf("benefits,%.2f,%.2f,%d,%b%n", childBenefits, materialAid, numberOfChildren, isDisabled);
-            fileLogger.info("Data saved to file: {}", filename);
+            // Логування прибрано
         } catch (IOException e) {
-            errorLogger.error(ERROR_MARKER, "Error saving data to file: {}", filename, e);
-            throw e; // Перекидання виключення після логування
+            throw e; // Перекидання виключення
         }
     }
 
@@ -163,10 +145,9 @@ public class TaxPayer {
                     incomes.add(new Income(source, amount, type));
                 }
             }
-            fileLogger.info("Data successfully loaded from file: {}", filename);
+            // Логування прибрано
         } catch (IOException e) {
-            errorLogger.error(ERROR_MARKER, "Error loading data from file: {}", filename, e);
-            throw e; // Перекидання виключення після логування
+            throw e; // Перекидання виключення
         }
     }
 

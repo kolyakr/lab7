@@ -2,19 +2,11 @@ package main;
 
 import commands.*;
 import models.TaxPayer;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.Marker;
-import org.apache.logging.log4j.MarkerManager;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Menu {
-    private static final Logger logger = LogManager.getLogger(Menu.class); // Logger for menu actions
-    private static final Logger errorLogger = LogManager.getLogger("ErrorLogger"); // Logger for errors
-    private static final Marker ERROR_MARKER = MarkerManager.getMarker("ERROR"); // Error marker
-
     // ANSI escape codes for styling
     public static final String RESET = "\u001B[0m";
     public static final String GREEN = "\u001B[32m";
@@ -58,7 +50,6 @@ public class Menu {
                     }
                 } catch (InputMismatchException e) {
                     System.out.println("Invalid input. Please enter a number.");
-                    errorLogger.error(ERROR_MARKER, "Invalid input in menu choice: {}", e.getMessage(), e); // Log error
                     scanner.next(); // Clear the buffer
                 }
             }
@@ -66,47 +57,36 @@ public class Menu {
             // Execute user's choice
             switch (choice) {
                 case 1:
-                    logger.info("Executing Add Income command."); // Log action
                     new AddIncomeCommand(taxPayer).execute();
                     break;
                 case 2:
-                    logger.info("Executing Delete Income command."); // Log action
                     new DeleteIncomeCommand(taxPayer).execute();
                     break;
                 case 3:
-                    logger.info("Executing Calculate Taxes command."); // Log action
                     new CalculateTaxesCommand(taxPayer).execute();
                     break;
                 case 4:
-                    logger.info("Executing Sort Taxes command."); // Log action
                     new SortTaxesCommand(taxPayer).execute();
                     break;
                 case 5:
-                    logger.info("Executing Find Taxes command."); // Log action
                     new FindTaxesCommand(taxPayer).execute();
                     break;
                 case 6:
-                    logger.info("Executing Generate Report command."); // Log action
                     new GenerateReportCommand(taxPayer).execute();
                     break;
                 case 7:
-                    logger.info("Executing Set Child Benefits command."); // Log action
                     new SetChildBenefitsCommand(taxPayer).execute();
                     break;
                 case 8:
-                    logger.info("Executing Set Material Aid command."); // Log action
                     new SetMaterialAidCommand(taxPayer).execute();
                     break;
                 case 9:
-                    logger.info("Executing Save Data command."); // Log action
                     new SaveDataCommand(taxPayer).execute();
                     break;
                 case 10:
-                    logger.info("Executing Load Data command."); // Log action
                     new LoadDataCommand(taxPayer).execute();
                     break;
                 case 0:
-                    logger.info("Exiting the application..."); // Log exit
                     System.out.println("Exiting...");
                     return;
                 default:

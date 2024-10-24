@@ -1,15 +1,6 @@
 package models;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.Marker;
-import org.apache.logging.log4j.MarkerManager;
-
 public class Income {
-    private static final Logger fileLogger = LogManager.getLogger(Income.class); // Логер для загальних дій
-    private static final Logger errorLogger = LogManager.getLogger("ErrorLogger"); // Логер для помилок
-    private static final Marker ERROR_MARKER = MarkerManager.getMarker("ERROR"); // Маркер для помилок
-
     private String source;
     private double amount;
     private String type;  // Тип доходу (основний, додатковий, подарунок тощо)
@@ -18,7 +9,7 @@ public class Income {
         this.source = source;
         this.amount = amount;
         this.type = type;
-        fileLogger.info("Income created: Source: {}, Amount: {}, Type: {}", source, amount, type);
+        // Логування прибрано
     }
 
     public double getAmount() {
@@ -47,7 +38,7 @@ public class Income {
             // Інші варіанти можуть бути додані при необхідності
         }
         double calculatedTax = amount * taxRate;
-        fileLogger.info("Calculating tax for Income: Source: {}, Amount: {}, Tax: {}", source, amount, calculatedTax);
+        // Логування прибрано
         return calculatedTax;
     }
 }

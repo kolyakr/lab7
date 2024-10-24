@@ -4,46 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fce8e51-3181-4fbb-b5cd-1030e916c93a" name="Changes" comment="add tests">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/commands/AddBenefitsCommandTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/commands/AddIncomeCommandTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/commands/CalculateTaxesCommandTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/commands/DeleteIncomeCommandTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/commands/DisplayTableCommandTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/commands/ExitCommandTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/commands/FindTaxesCommandTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/commands/GenerateReportCommandTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/commands/SaveDataCommandTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/commands/SetChildBenefitsCommandTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/commands/SetMaterialAidCommandTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/commands/SortTaxesCommandTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/main/MainTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/main/MenuTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/models/IncomeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/models/TaxPayerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/AddBenefitsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/AddBenefitsCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/AddIncomeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/AddIncomeCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/CalculateTaxesCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/CalculateTaxesCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/DeleteIncomeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/DeleteIncomeCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/ExitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/ExitCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/FindTaxesCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/FindTaxesCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/GenerateReportCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/GenerateReportCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/LoadDataCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/LoadDataCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/SaveDataCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/SaveDataCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/SetChildBenefitsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/SetChildBenefitsCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/SetMaterialAidCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/SetMaterialAidCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/SortTaxesCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/SortTaxesCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/CommandInvoker.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Income.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Income.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/TaxPayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/TaxPayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/commands/LoadDataCommandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/commands/LoadDataCommandTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="8fce8e51-3181-4fbb-b5cd-1030e916c93a" name="Changes" comment="add tests" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,38 +42,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.EmailTest.executor": "Run",
-    "Application.LogTest.executor": "Run",
-    "Application.Main.executor": "Run",
-    "JUnit.AddBenefitsCommandTest.executor": "Coverage",
-    "JUnit.AddIncomeCommandTest.executor": "Coverage",
-    "JUnit.CommandInvokerTest (1).executor": "Coverage",
-    "JUnit.CommandInvokerTest.executor": "Coverage",
-    "JUnit.DeleteIncomeCommandTest.executor": "Coverage",
-    "JUnit.DisplayTableCommandTest.executor": "Coverage",
-    "JUnit.ExitCommandTest.executor": "Coverage",
-    "JUnit.FindTaxesCommandTest.executor": "Coverage",
-    "JUnit.MainTest.executor": "Coverage",
-    "JUnit.MenuTest (1).executor": "Run",
-    "JUnit.MenuTest.executor": "Coverage",
-    "JUnit.SetChildBenefitsCommandTest.executor": "Coverage",
-    "JUnit.SortTaxesCommandTest.executor": "Coverage",
-    "JUnit.TaxPayerTest.executor": "Coverage",
-    "JUnit.commands in TaxSystemProject.executor": "Coverage",
-    "JUnit.java in TaxSystemProject.executor": "Coverage",
-    "JUnit.models in TaxSystemProject.executor": "Coverage",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Desktop/java-labs/TaxSystemProject/src/test/java",
-    "onboarding.tips.debug.path": "D:/Desktop/java-labs/TaxSystemProject/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.EmailTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LogTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AddBenefitsCommandTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.AddIncomeCommandTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.CommandInvokerTest (1).executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.CommandInvokerTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.DeleteIncomeCommandTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.DisplayTableCommandTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.ExitCommandTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.FindTaxesCommandTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.MainTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.MenuTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MenuTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.SetChildBenefitsCommandTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.SortTaxesCommandTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.TaxPayerTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.commands in TaxSystemProject.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.java in TaxSystemProject.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.models in TaxSystemProject.executor&quot;: &quot;Coverage&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Desktop/java-labs/TaxSystemProject/src/test/java&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/Desktop/java-labs/TaxSystemProject/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Desktop\java-labs\TaxSystemProject\src\test\java" />
@@ -128,7 +89,7 @@
       <recent name="com.taxsystem.models" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TaxPayerTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="LogTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LogTest" />
       <module name="TaxSystemProject" />
@@ -189,8 +150,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TaxPayerTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.TaxPayerTest" />
         <item itemvalue="JUnit.MenuTest" />
         <item itemvalue="JUnit.java in TaxSystemProject" />
         <item itemvalue="Application.LogTest" />

@@ -2,15 +2,12 @@ package commands;
 
 import models.Income;
 import models.TaxPayer;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
 public class DeleteIncomeCommand implements Command {
-    private static final Logger fileLogger = LogManager.getLogger(DeleteIncomeCommand.class);
     private TaxPayer taxPayer;
 
     public DeleteIncomeCommand(TaxPayer taxPayer) {
@@ -56,8 +53,6 @@ public class DeleteIncomeCommand implements Command {
                         Income deletedIncome = incomes.get(index); // Get the income to be deleted
                         taxPayer.removeIncome(index);
                         System.out.println("Income successfully deleted.");
-                        fileLogger.info("Deleted income: Source: {}, Amount: {}, Type: {}",
-                                deletedIncome.getSource(), deletedIncome.getAmount(), deletedIncome.getType()); // Log the deletion
                         validInput = true;
                     } else {
                         System.out.println("Invalid index. Please try again.");

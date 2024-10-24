@@ -4,49 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fce8e51-3181-4fbb-b5cd-1030e916c93a" name="Changes" comment="add more logic">
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Income.java" afterDir="false" />
+    <list default="true" id="8fce8e51-3181-4fbb-b5cd-1030e916c93a" name="Changes" comment="add tests">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/commands/AddBenefitsCommandTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/commands/AddIncomeCommandTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/commands/CalculateTaxesCommandTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/commands/DeleteIncomeCommandTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/commands/DisplayTableCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/commands/ExitCommandTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/commands/FindTaxesCommandTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/commands/GenerateReportCommandTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/commands/LoadDataCommandTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/commands/SaveDataCommandTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/commands/SetChildBenefitsCommandTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/commands/SetMaterialAidCommandTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/commands/SortTaxesCommandTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/main/CommandInvokerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/main/MainTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/main/MenuTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/models/IncomeTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/models/TaxPayerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/AddBenefitsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/AddBenefitsCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/AddIncomeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/AddIncomeCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/CalculateTaxesCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/CalculateTaxesCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/DeleteIncomeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/DeleteIncomeCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/DisplayTableCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/DisplayTableCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/ExitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/ExitCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/FindTaxesCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/FindTaxesCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/GenerateReportCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/GenerateReportCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/LoadDataCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/LoadDataCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/SaveDataCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/SaveDataCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/SetChildBenefitsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/SetChildBenefitsCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/SetMaterialAidCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/SetMaterialAidCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/commands/SortTaxesCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/SortTaxesCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/main/CommandInvoker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/CommandInvoker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/main/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/models/Income.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/models/TaxPayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/TaxPayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taxsystem/models/TaxPayerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/AddBenefitsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/AddBenefitsCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/AddIncomeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/AddIncomeCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/CalculateTaxesCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/CalculateTaxesCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/DeleteIncomeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/DeleteIncomeCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/ExitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/ExitCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/FindTaxesCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/FindTaxesCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/GenerateReportCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/GenerateReportCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/LoadDataCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/LoadDataCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/SaveDataCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/SaveDataCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/SetChildBenefitsCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/SetChildBenefitsCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/SetMaterialAidCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/SetMaterialAidCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/SortTaxesCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/SortTaxesCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/CommandInvoker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Income.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Income.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/TaxPayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/TaxPayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/commands/LoadDataCommandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/commands/LoadDataCommandTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,19 +81,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Desktop/java-labs/TaxSystemProject/src/test/java&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/Desktop/java-labs/TaxSystemProject/src/main/java/org/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.EmailTest.executor": "Run",
+    "Application.LogTest.executor": "Run",
+    "Application.Main.executor": "Run",
+    "JUnit.AddBenefitsCommandTest.executor": "Coverage",
+    "JUnit.AddIncomeCommandTest.executor": "Coverage",
+    "JUnit.CommandInvokerTest (1).executor": "Coverage",
+    "JUnit.CommandInvokerTest.executor": "Coverage",
+    "JUnit.DeleteIncomeCommandTest.executor": "Coverage",
+    "JUnit.DisplayTableCommandTest.executor": "Coverage",
+    "JUnit.ExitCommandTest.executor": "Coverage",
+    "JUnit.FindTaxesCommandTest.executor": "Coverage",
+    "JUnit.MainTest.executor": "Coverage",
+    "JUnit.MenuTest (1).executor": "Run",
+    "JUnit.MenuTest.executor": "Coverage",
+    "JUnit.SetChildBenefitsCommandTest.executor": "Coverage",
+    "JUnit.SortTaxesCommandTest.executor": "Coverage",
+    "JUnit.TaxPayerTest.executor": "Coverage",
+    "JUnit.commands in TaxSystemProject.executor": "Coverage",
+    "JUnit.java in TaxSystemProject.executor": "Coverage",
+    "JUnit.models in TaxSystemProject.executor": "Coverage",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Desktop/java-labs/TaxSystemProject/src/test/java",
+    "onboarding.tips.debug.path": "D:/Desktop/java-labs/TaxSystemProject/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Desktop\java-labs\TaxSystemProject\src\test\java" />
@@ -112,6 +127,75 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.taxsystem.models" />
     </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TaxPayerTest">
+    <configuration name="LogTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LogTest" />
+      <module name="TaxSystemProject" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Main" />
+      <module name="TaxSystemProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MenuTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TaxSystemProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main" />
+      <option name="MAIN_CLASS_NAME" value="main.MenuTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaxPayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TaxSystemProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="models" />
+      <option name="MAIN_CLASS_NAME" value="models.TaxPayerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="java in TaxSystemProject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TaxSystemProject" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TaxPayerTest" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.MenuTest" />
+        <item itemvalue="JUnit.java in TaxSystemProject" />
+        <item itemvalue="Application.LogTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -146,7 +230,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728746277808</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add tests">
+      <option name="closed" value="true" />
+      <created>1728977662747</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728977662747</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -164,6 +256,51 @@
     <MESSAGE value="start" />
     <MESSAGE value="add logic" />
     <MESSAGE value="add more logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="add more logic" />
+    <MESSAGE value="add tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="add tests" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/TaxSystemProject$MenuTest__1_.ic" NAME="MenuTest (1) Coverage Results" MODIFIED="1729240165465" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>testMainPackage.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TaxSystemProject$java_in_TaxSystemProject.ic" NAME="java in TaxSystemProject Coverage Results" MODIFIED="1729706600833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/TaxSystemProject$MenuTest.ic" NAME="MenuTest Coverage Results" MODIFIED="1729752147321" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>main.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TaxSystemProject$commands_in_TaxSystemProject.ic" NAME="commands in TaxSystemProject Coverage Results" MODIFIED="1729241947636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/TaxSystemProject$AddIncomeCommandTest.ic" NAME="AddIncomeCommandTest Coverage Results" MODIFIED="1729236033111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>commands.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TaxSystemProject$DisplayTableCommandTest.ic" NAME="DisplayTableCommandTest Coverage Results" MODIFIED="1729613103039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>commands.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TaxSystemProject$MainTest.ic" NAME="MainTest Coverage Results" MODIFIED="1729243345432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>main.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TaxSystemProject$models_in_TaxSystemProject.ic" NAME="models in TaxSystemProject Coverage Results" MODIFIED="1729611557512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/TaxSystemProject$ExitCommandTest.ic" NAME="ExitCommandTest Coverage Results" MODIFIED="1729243140949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>commands.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TaxSystemProject$DeleteIncomeCommandTest.ic" NAME="DeleteIncomeCommandTest Coverage Results" MODIFIED="1729237217952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>commands.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TaxSystemProject$SetChildBenefitsCommandTest.ic" NAME="SetChildBenefitsCommandTest Coverage Results" MODIFIED="1729236257071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>commands.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TaxSystemProject$CommandInvokerTest.ic" NAME="CommandInvokerTest Coverage Results" MODIFIED="1729237572664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>main.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TaxSystemProject$FindTaxesCommandTest.ic" NAME="FindTaxesCommandTest Coverage Results" MODIFIED="1729243534696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>commands.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TaxSystemProject$AddBenefitsCommandTest.ic" NAME="AddBenefitsCommandTest Coverage Results" MODIFIED="1729612303838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>commands.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TaxSystemProject$CommandInvokerTest__1_.ic" NAME="CommandInvokerTest (1) Coverage Results" MODIFIED="1729234814121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>testMain.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TaxSystemProject$SortTaxesCommandTest.ic" NAME="SortTaxesCommandTest Coverage Results" MODIFIED="1729236161747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>commands.*</FILTER>
+    </SUITE>
   </component>
 </project>

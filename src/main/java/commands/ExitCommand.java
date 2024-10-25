@@ -19,6 +19,6 @@ public class ExitCommand implements Command {
         if (shouldCloseScanner) {
             scanner.close();
         }
-        exitAction.run(); // Виклик замість System.exit(0)
+        exitAction.run();
     }
 }

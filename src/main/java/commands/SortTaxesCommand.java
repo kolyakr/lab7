@@ -31,7 +31,7 @@ public class SortTaxesCommand implements Command {
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Invalid input. Please enter 1 or 2.");
-                scanner.next(); // Очищення буфера після неправильного вводу
+                scanner.next();
             }
         }
     }

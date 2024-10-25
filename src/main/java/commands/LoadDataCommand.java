@@ -19,10 +19,10 @@ public class LoadDataCommand implements Command {
         String filename = scanner.nextLine();
 
         try {
-            taxPayer.loadFromFile(filename); // Виклик методу, що може кинути IOException
-            System.out.println("Data successfully loaded from file: " + filename); // Повідомлення про успішне завантаження
+            taxPayer.loadFromFile(filename);
+            System.out.println("Data successfully loaded from file: " + filename);
         } catch (IOException e) {
-            System.err.println("Error loading data: " + e.getMessage()); // Повідомлення про помилку
+            System.err.println("Error loading data: " + e.getMessage());
         }
     }
 }

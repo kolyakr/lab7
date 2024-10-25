@@ -12,10 +12,10 @@ public class GenerateReportCommand implements Command {
     @Override
     public void execute() {
         try {
-            taxPayer.generateTaxReport(); // Виклик методу генерації звіту
-            System.out.println("Tax report generated successfully."); // Повідомлення про успішну генерацію
+            taxPayer.generateTaxReport();
+            System.out.println("Tax report generated successfully.");
         } catch (Exception e) {
-            System.out.println("Error generating tax report: " + e.getMessage()); // Повідомлення про помилку
+            System.out.println("Error generating tax report: " + e.getMessage());
         }
     }
 }

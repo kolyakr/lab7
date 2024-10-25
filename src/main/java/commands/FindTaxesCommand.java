@@ -20,7 +20,6 @@ public class FindTaxesCommand implements Command {
         double min = -1;
         double max = -1;
 
-        // Зчитування мінімального значення
         while (min < 0) {
             try {
                 System.out.print("Enter the minimum tax amount: ");
@@ -30,11 +29,10 @@ public class FindTaxesCommand implements Command {
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Invalid input. Please enter a numerical value.");
-                scanner.next(); // Очищення буфера
+                scanner.next();
             }
         }
 
-        // Зчитування максимального значення
         while (true) {
             try {
                 System.out.print("Enter the maximum tax amount: ");
@@ -44,15 +42,14 @@ public class FindTaxesCommand implements Command {
                 } else if (max < min) {
                     System.out.println("The maximum amount cannot be less than the minimum. Please try again.");
                 } else {
-                    break; // Вихід з циклу, якщо вхід коректний
+                    break;
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Invalid input. Please enter a numerical value.");
-                scanner.next(); // Очищення буфера
+                scanner.next();
             }
         }
 
-        // Знаходження податків в заданому діапазоні
         List<Double> taxesInRange = taxPayer.findTaxesInRange(min, max);
         if (taxesInRange.isEmpty()) {
             System.out.println("No taxes found in this range.");

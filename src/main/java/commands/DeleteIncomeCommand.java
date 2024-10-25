@@ -26,8 +26,7 @@ public class DeleteIncomeCommand implements Command {
 
         boolean isDeleting = true;
 
-        while (isDeleting && !incomes.isEmpty()) { // Перевірка, чи список не порожній
-            // Display the list of incomes with indices
+        while (isDeleting && !incomes.isEmpty()) {
             System.out.println("List of incomes:");
             for (int i = 0; i < incomes.size(); i++) {
                 Income income = incomes.get(i);
@@ -37,7 +36,6 @@ public class DeleteIncomeCommand implements Command {
             int index = -1;
             boolean validInput = false;
 
-            // Prompt for index to delete with validation
             while (!validInput) {
                 try {
                     System.out.print("Enter the index of the income to delete (or -1 to exit): ");
@@ -50,7 +48,7 @@ public class DeleteIncomeCommand implements Command {
                     }
 
                     if (index >= 0 && index < incomes.size()) {
-                        Income deletedIncome = incomes.get(index); // Get the income to be deleted
+                        Income deletedIncome = incomes.get(index);
                         taxPayer.removeIncome(index);
                         System.out.println("Income successfully deleted.");
                         validInput = true;
@@ -59,14 +57,12 @@ public class DeleteIncomeCommand implements Command {
                     }
                 } catch (InputMismatchException e) {
                     System.out.println("Invalid input. Please enter a valid index.");
-                    scanner.next(); // Clear the buffer
+                    scanner.next();
                 }
             }
 
-            // Update the list after deleting the income
             incomes = taxPayer.getIncomes();
 
-            // If the list is empty after deletion, finish deleting
             if (incomes.isEmpty()) {
                 System.out.println("All incomes have been deleted.");
                 isDeleting = false;

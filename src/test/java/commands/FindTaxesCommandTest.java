@@ -11,8 +11,8 @@ import java.util.Arrays;
 import static org.mockito.Mockito.*;
 
 class FindTaxesCommandTest {
-    private TaxPayer taxPayer; // Змінна для податківця
-    private FindTaxesCommand findTaxesCommand; // Змінна для команди пошуку податків
+    private TaxPayer taxPayer;
+    private FindTaxesCommand findTaxesCommand;
 
     @BeforeEach
     void setUp() {
@@ -24,9 +24,8 @@ class FindTaxesCommandTest {
     void testExecuteValidInput() {
         String input = "150\n300\n"; // Мінімум = 150, максимум = 300
         InputStream in = new ByteArrayInputStream(input.getBytes()); // Симульоване введення
-        System.setIn(in); // Встановлюємо симульоване введення в System.in
+        System.setIn(in);
 
-        // Налаштування поведінки мок-об'єкта
         when(taxPayer.findTaxesInRange(150, 300)).thenReturn(Arrays.asList(175.0, 250.0));
 
         findTaxesCommand.execute(); // Виконання команди пошуку податків
@@ -38,22 +37,21 @@ class FindTaxesCommandTest {
     @Test
     void testExecuteInvalidMinAmount() {
         String input = "-50\n200\n300\n"; // Некоректний мінімум, коректний максимум
-        InputStream in = new ByteArrayInputStream(input.getBytes()); // Симульоване введення
-        System.setIn(in); // Встановлюємо симульоване введення в System.in
+        InputStream in = new ByteArrayInputStream(input.getBytes());
+        System.setIn(in);
 
         when(taxPayer.findTaxesInRange(200, 300)).thenReturn(Arrays.asList()); // Налаштування поведінки для коректного діапазону
 
-        findTaxesCommand.execute(); // Виконання команди пошуку податків
+        findTaxesCommand.execute();
 
-        // Перевіряємо, що метод findTaxesInRange був викликаний з коректними параметрами
         verify(taxPayer, times(1)).findTaxesInRange(200, 300);
     }
 
     @Test
     void testExecuteValidRange() {
         String input = "200\n400\n"; // Коректний діапазон
-        InputStream in = new ByteArrayInputStream(input.getBytes()); // Симульоване введення
-        System.setIn(in); // Встановлюємо симульоване введення в System.in
+        InputStream in = new ByteArrayInputStream(input.getBytes());
+        System.setIn(in);
 
         when(taxPayer.findTaxesInRange(200, 400)).thenReturn(Arrays.asList(250.0, 350.0)); // Налаштування поведінки мок-об'єкта
 

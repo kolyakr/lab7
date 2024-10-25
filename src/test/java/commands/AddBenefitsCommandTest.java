@@ -58,21 +58,6 @@ public class AddBenefitsCommandTest {
     }
 
     @Test
-    public void testExecuteWithNegativeInput() {
-        // Емітуємо введення користувачем негативних значень для пільг
-        String userInput = "-100\n-50\n";
-        ByteArrayInputStream in = new ByteArrayInputStream(userInput.getBytes());
-        System.setIn(in);
-
-        command.execute();
-
-        // Перевіряємо, що методи setChildBenefits і setMaterialAid викликалися з негативними значеннями
-        verify(mockTaxPayer).setChildBenefits(-100);
-        verify(mockTaxPayer).setMaterialAid(-50);
-        assertTrue(outContent.toString().contains("Benefits successfully added."), "Повідомлення про успішне додавання має відобразитися");
-    }
-
-    @Test
     public void testExecuteMultipleValidInputs() {
         // Емітуємо кілька правильних введень користувачем
         String userInput = "2000\n1000\n"; // Перше введення

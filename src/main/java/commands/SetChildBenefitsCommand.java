@@ -28,12 +28,11 @@ public class SetChildBenefitsCommand implements Command {
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Invalid input. Please enter an integer.");
-                scanner.next(); // Clear the buffer after incorrect input
+                scanner.next();
             }
         }
         taxPayer.setNumberOfChildren(numberOfChildren);
 
-        // Input benefits per child
         while (benefitPerChild <= 0) {
             try {
                 System.out.print("Enter the amount of benefits per child: ");
@@ -43,7 +42,7 @@ public class SetChildBenefitsCommand implements Command {
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Invalid input. Please enter a numerical value.");
-                scanner.next(); // Clear the buffer after incorrect input
+                scanner.next();
             }
         }
         taxPayer.setChildBenefits(benefitPerChild);

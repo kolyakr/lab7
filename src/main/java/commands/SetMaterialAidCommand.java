@@ -17,7 +17,6 @@ public class SetMaterialAidCommand implements Command {
         Scanner scanner = new Scanner(System.in);
         double materialAid = -1;
 
-        // Input material aid
         while (materialAid <= 0) {
             try {
                 System.out.print("Enter the amount of material aid: ");
@@ -27,7 +26,7 @@ public class SetMaterialAidCommand implements Command {
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Invalid input. Please enter a numerical value.");
-                scanner.next(); // Clear the buffer after incorrect input
+                scanner.next();
             }
         }
 

@@ -21,13 +21,10 @@ public class TaxPayer {
         this.isDisabled = false;
     }
 
-    // Метод для додавання доходу
     public void addIncome(Income income) {
         incomes.add(income);
-        // Логування прибрано
     }
 
-    // Метод для видалення доходу за індексом
     public boolean removeIncome(int index) {
         if (index >= 0 && index < incomes.size()) {
             incomes.remove(index);
@@ -36,19 +33,14 @@ public class TaxPayer {
         return false;
     }
 
-    // Метод для сортування податків у зростаючому порядку
     public void sortTaxesAscending() {
         Collections.sort(incomes, Comparator.comparingDouble(Income::getAmount));
-        // Логування прибрано
     }
 
-    // Метод для сортування податків у спадаючому порядку
     public void sortTaxesDescending() {
         Collections.sort(incomes, (i1, i2) -> Double.compare(i2.getAmount(), i1.getAmount()));
-        // Логування прибрано
     }
 
-    // Метод для знаходження податків у заданому діапазоні
     public List<Double> findTaxesInRange(double min, double max) {
         List<Double> taxesInRange = new ArrayList<>();
         for (Income income : incomes) {
@@ -57,15 +49,13 @@ public class TaxPayer {
                 taxesInRange.add(tax);
             }
         }
-        // Логування прибрано
         return taxesInRange;
     }
 
-    // Метод для генерації податкового звіту
     public void generateTaxReport() {
-        int widthSource = 20; // Ширина стовпця для джерела
-        int widthAmount = 15;  // Ширина стовпця для суми
-        int widthTax = 10;     // Ширина стовпця для податку
+        int widthSource = 20;
+        int widthAmount = 15;
+        int widthTax = 10;
 
         // Розділова лінія
         System.out.println("=".repeat(widthSource + widthAmount + widthTax + 2));
@@ -75,16 +65,13 @@ public class TaxPayer {
         System.out.println("=".repeat(widthSource + widthAmount + widthTax + 2));
 
         for (Income income : incomes) {
-            double tax = income.getAmount() * 0.185; // Обчислення податку
-            // Вивід інформації про дохід у консоль у форматі таблиці
+            double tax = income.getAmount() * 0.185;
             System.out.printf("%-" + widthSource + "s %" + widthAmount + ".2f %" + widthTax + ".2f%n", income.getSource(), income.getAmount(), tax);
         }
 
-        // Розділова лінія
         System.out.println("=".repeat(widthSource + widthAmount + widthTax + 2));
     }
 
-    // Метод для обчислення загальних податків з урахуванням пільг
     public double calculateTotalTaxes() {
         double totalIncome = 0;
         for (Income income : incomes) {
@@ -93,21 +80,19 @@ public class TaxPayer {
 
         double benefits = childBenefits + materialAid;
 
-        // Додаткові пільги для великих сімей і осіб з інвалідністю
         if (numberOfChildren > 2) {
-            benefits += 500; // Додаткова пільга для великих сімей
+            benefits += 500;
         }
         if (isDisabled) {
-            benefits += 1000; // Додаткова пільга для осіб з інвалідністю
+            benefits += 1000;
         }
 
         double taxableIncome = totalIncome - benefits;
-        double totalTaxes = taxableIncome * 0.185; // 18% податок на доходи + 1.5% військовий збір
+        double totalTaxes = taxableIncome * 0.185;
 
-        return totalTaxes > 0 ? totalTaxes : 0; // Податки не можуть бути негативними
+        return totalTaxes > 0 ? totalTaxes : 0;
     }
 
-    // Метод для збереження даних у CSV файл
     public void saveToFile(String filename) throws IOException {
         try (PrintWriter writer = new PrintWriter(new FileWriter(filename))) {
             writer.println("source,amount,type");
@@ -115,21 +100,18 @@ public class TaxPayer {
                 writer.printf("%s,%.2f,%s%n", income.getSource(), income.getAmount(), income.getType());
             }
             writer.printf("benefits,%.2f,%.2f,%d,%b%n", childBenefits, materialAid, numberOfChildren, isDisabled);
-            // Логування прибрано
         } catch (IOException e) {
-            throw e; // Перекидання виключення
+            throw e;
         }
     }
 
-    // Метод для завантаження даних з CSV файлу
     public void loadFromFile(String filename) throws IOException {
         try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
             String line;
 
-            // Пропустити перший рядок з заголовками
-            reader.readLine();  // Пропустити заголовки (source,amount,type)
+            reader.readLine();
 
-            incomes.clear();  // Очищення попередніх даних
+            incomes.clear();
 
             while ((line = reader.readLine()) != null) {
                 String[] parts = line.split(",");
@@ -145,13 +127,11 @@ public class TaxPayer {
                     incomes.add(new Income(source, amount, type));
                 }
             }
-            // Логування прибрано
         } catch (IOException e) {
-            throw e; // Перекидання виключення
+            throw e;
         }
     }
 
-    // Геттери та сеттери для інших атрибутів
     public List<Income> getIncomes() {
         return incomes;
     }

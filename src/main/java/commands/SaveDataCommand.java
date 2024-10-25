@@ -19,10 +19,10 @@ public class SaveDataCommand implements Command {
         String filename = scanner.nextLine();
 
         try {
-            taxPayer.saveToFile(filename); // Виклик методу, що може викликати IOException
-            System.out.println("Data successfully saved to file: " + filename); // Повідомлення про успішне збереження
+            taxPayer.saveToFile(filename);
+            System.out.println("Data successfully saved to file: " + filename);
         } catch (IOException e) {
-            System.err.println("Error saving data: " + e.getMessage()); // Повідомлення про помилку
+            System.err.println("Error saving data: " + e.getMessage());
         }
     }
 }
